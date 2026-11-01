@@ -856,7 +856,7 @@ def run():
     # =========================
     # Worst-case timing
     # =========================
-    delta = 2.0
+    delta = 3.0
     print(
         f"=== Worst-case over log-likelihood level set "
         f"using IPOPT (delta={delta}) ==="
