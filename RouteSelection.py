@@ -683,7 +683,7 @@ def describe_policy(theta):
 # ============================================================
 # 9) Run experiment
 # ============================================================
-def run(n_trajs=80, seed=18, delta=3.0):
+def run(n_trajs=80, seed=18, delta=4.0):
     model = SatisfactionModel()
     counts = generate_demonstrations(n_trajs, THETA_TRUE, seed)
     theta_hat = mle(counts)
