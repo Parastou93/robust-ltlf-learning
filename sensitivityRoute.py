@@ -7,7 +7,7 @@ the number of identifiable policy parameters. Here the policy is the softmax
 policy of Eq. (1) with d = 4 features, so r = 4 and
 confidence = 1 - exp(-delta) * (1 + delta).
 
-Put this file next to Route_Selection.py (the Example 1 code).
+Put this file next to RouteSelection.py (the Example 1 code).
 
 Output: printed table and sensitivity_route.csv
 """
