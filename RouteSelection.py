@@ -241,7 +241,7 @@ def forward_distributions(pi_prod):
 
 
 # ============================================================
-# 4) Bounded grammar as a shared syntax DAG (unchanged)
+# 4) Bounded grammar as a shared syntax DAG
 # ============================================================
 #   p   ::= T | C | S
 #   psi ::= F p | G !p
