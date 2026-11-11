@@ -16,7 +16,7 @@ import csv
 import numpy as np
 from scipy.stats import chi2
 
-import Route_Selection as rs
+import RouteSelection as rs
 
 
 # ------------------------------------------------------------ confidence
