@@ -25,17 +25,17 @@ Each script must be in the same folder as the example it uses.
 |---|---|
 | `RouteSelection.py` | Example 1: nominal and robust rankings (Table I) |
 | `Daily_Physical_Activity.py` | Example 2: nominal and robust rankings (Table II) |
-| `sensitivityRoute.py` | Example 1: sensitivity of the robust selection to δ (80%–99% confidence) |
-| `sensitivity_activity.py` | Example 2: sensitivity of the robust selection to δ (80%–99% confidence) |
+| `sensitivityRoute.py` | Example 1: robust selection for δ from 0 to 4 in steps of 0.25 (δ = 0 is the nominal evaluation) |
+| `sensitivity_activity.py` | Example 2: robust selection for δ from 0 to 4 in steps of 0.25 (δ = 0 is the nominal evaluation) |
 | `study_demo_size_route.py` | Example 1: comparison with the true satisfaction probabilities for different numbers of demonstrations |
 | `study_demo_size_activity.py` | Example 2: comparison with the true satisfaction probabilities for different numbers of demonstration days |
 
-For example: `python RouteSelection.py`. The sensitivity and demonstration-size scripts take several minutes each.
+For example: `python RouteSelection.py`. The sensitivity and demonstration-size scripts take from several minutes to about an hour each.
 
-Experiment settings, such as the number of demonstrations, random seed, and δ, can be adjusted at the top of each file.
+Experiment settings, such as the number of demonstrations, random seed, and δ, can be adjusted in `run()` in `RouteSelection.py` and in `Settings` in `Daily_Physical_Activity.py`. The δ values tested by the sensitivity scripts are set by `DELTAS` at the top of each script.
 
 ## Outputs
 
-The main scripts report the candidate formulas, nominal and worst-case satisfaction probabilities, the selected specifications, and computation times. The sensitivity and demonstration-size scripts print summary tables and save their results as CSV files. Example 2 also saves its rankings and demonstrations in `general_activity_results/`.
+The main scripts report the candidate formulas, nominal and worst-case satisfaction probabilities, the selected specifications, and computation times. The sensitivity scripts print the selected formula and the five highest-ranked formulas for each δ, followed by the range of tested δ values over which the selected formula does not change. The sensitivity and demonstration-size scripts save their results as CSV files. Example 2 also saves its rankings and demonstrations in `general_activity_results/`.
 
 All model parameters and demonstrations are synthetic.
