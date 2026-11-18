@@ -36,7 +36,7 @@ class Settings:
     days: int = 30
     seed: int = 16
     goal: int = 5500
-    delta: float = 4.0
+    delta: float = 2.0
     # Reference policy, separate from the policy that generates the demonstrations.
     reference_weights: tuple = (.40, .35, .25)
 
