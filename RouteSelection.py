@@ -522,7 +522,7 @@ def _count_distinct(values, tol):
 
 
 def worst_case_multistart(phi, counts, theta_hat, delta, model,
-                          batch_size=8, min_starts=24, max_starts=120,
+                          batch_size=8, min_starts=27, max_starts=120,
                           min_hits=3, value_tol=1e-7, seed=0,
                           max_iter=300, print_level=0):
     accept = ACCEPT[phi]
