@@ -11,7 +11,7 @@ This code implements the two examples in the paper, comparing nominal and robust
 ## Methods
 
 - **Nominal:** Selects the formula with the highest satisfaction probability under the maximum-likelihood policy.
-- **Robust:** Selects the formula with the highest worst-case satisfaction probability over a likelihood-based policy uncertainty set, solved with IPOPT from multiple starting points. The default radius is δ = 4.
+- **Robust:** Selects the formula with the highest worst-case satisfaction probability over a likelihood-based policy uncertainty set, solved with IPOPT from multiple starting points. The default radius is δ = 2.
 
 ## Requirements
 
